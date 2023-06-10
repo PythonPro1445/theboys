@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Boys</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="main.js"></script>
+
+	<script>
+		// Function to handle form submission
+		function handleFormSubmit(event) {
+			event.preventDefault(); // Prevent the default form submission behavior
+			addUser(); // Call the addUser function to handle the login
+		}
+
+		// Function to add event listener for Enter key press
+		function addEnterKeyListener() {
+			document.addEventListener("keydown", function(event) {
+				if (event.key === "Enter") {
+					handleFormSubmit(event); // Call the handleFormSubmit function on Enter key press
+				}
+			});
+		}
+
+		// Add the Enter key listener when the page finishes loading
+		window.onload = function() {
+			addEnterKeyListener();
+		};
+	</script>
+</head>
+<body>
+	<img src="the-boys.png" style="width: 120px; padding-top: 15px; padding-left: 15px;">
+	<center>
+		<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+				<img src="the-boys.png" class="logo">
+				<br>
+				<form onsubmit="handleFormSubmit(event)">
+					<div class="form-group">
+						<br>
+						<label style="font-family: 'Courier New', Courier, monospace;">User Name:</label>
+						<input type="text" id="user_name" class="form-control" placeholder="User Name">
+
+						<label style="font-family: 'Courier New', Courier, monospace;">Password:</label>
+						<input type="password" id="password" class="form-control" placeholder="Password">
+					</div>
+					<button id="login_button" class="btn btn-primary">Start Chatting!</button>
+					<button id="forgot_password_button" class="btn btn-link" onclick="openForgotPassword()">Forgot Password?</button>
+					<br><br>
+				</form>
+			</div>
+		</div>
+	</center>
+</body>
+</html>
