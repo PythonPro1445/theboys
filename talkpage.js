@@ -1,12 +1,12 @@
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCuzThRReUlbi_lNA23yBuChdlY-g05je4",
-  authDomain: "howtheboystalk.firebaseapp.com",
-  projectId: "howtheboystalk",
-  databaseURL: "https://howtheboystalk-default-rtdb.firebaseio.com",
-  storageBucket: "howtheboystalk.appspot.com",
-  messagingSenderId: "624108531192",
-  appId: "1:624108531192:web:9f112bd782d911f5b7ba0d"
+  apiKey: "AIzaSyAbz_uNYVaoEJoD3fI8fd_JeHiuz-gvl4o",
+  authDomain: "the-boys-deb11.firebaseapp.com",
+  databaseURL: "https://the-boys-deb11-default-rtdb.firebaseio.com",
+  projectId: "the-boys-deb11",
+  storageBucket: "the-boys-deb11.appspot.com",
+  messagingSenderId: "722208487585",
+  appId: "1:722208487585:web:886176188556bae2a898e0",
+  measurementId: "G-EX9QF2154B"
 };
   
     firebase.initializeApp(firebaseConfig);
