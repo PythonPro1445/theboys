@@ -16,20 +16,18 @@
 
     <link rel="stylesheet" type="text/css" href="pg2style.css">
 
-    <!-- Include your pg2main.js script here -->
-    <script src="pg2main.js"></script>
-
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
-            apiKey: "YOUR_API_KEY",
-            authDomain: "YOUR_AUTH_DOMAIN",
-            databaseURL: "YOUR_DATABASE_URL",
-            projectId: "YOUR_PROJECT_ID",
-            storageBucket: "YOUR_STORAGE_BUCKET",
-            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-            appId: "YOUR_APP_ID"
-        };
+  			apiKey: "AIzaSyC_34Ael5XZbt1QsQHB45gVMtZBVP9bEm0",
+  			authDomain: "the-boys-2bbeb.firebaseapp.com",
+  			databaseURL: "https://the-boys-2bbeb-default-rtdb.firebaseio.com",
+  			projectId: "the-boys-2bbeb",
+  			storageBucket: "the-boys-2bbeb.appspot.com",
+  			messagingSenderId: "634741192362",
+  			appId: "1:634741192362:web:6e639cff6032da9e4542d3",
+  			measurementId: "G-JK1GSE14VZ"
+};
 
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
@@ -94,7 +92,7 @@
                 <input type="text" id="room_name" class="form-control" placeholder="#Room Name">
             </div>
 
-            <button onclick="addRoom();" class="btn btn-success">Start Chatting</button>
+            <button onclick="addRoom()" class="btn btn-success">Start Chatting</button>
             <br>
             <div id="output"></div>
         </center>
