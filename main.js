@@ -34,7 +34,7 @@ function addUser() {
     loginButton.textContent = " ";
     loginButton.textContent = "Logged In";
     window.location = "pg2index.html"
-  }, 2000);
+  }, 3000);
 }
 
 function change_password() {
